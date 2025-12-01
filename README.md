@@ -28,9 +28,5 @@
   This program can be run in environments such as Intellij IDEA or Ecplise IDE for Java Developer.
 
 
-
-🌐Desplegament
-
-
 🤝Contribucions
 I look forward to your contributions, thank you.
