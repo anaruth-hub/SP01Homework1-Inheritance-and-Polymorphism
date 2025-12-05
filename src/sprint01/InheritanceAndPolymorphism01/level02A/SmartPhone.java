@@ -1,4 +1,4 @@
-package sprint01Level02Only;
+package sprint01.InheritanceAndPolymorphism01.level02A;
 
 class SmartPhone extends Phone implements Camera, Clocck {
     public SmartPhone(String brand, String model) {

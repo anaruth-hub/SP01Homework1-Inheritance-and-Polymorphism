@@ -1,4 +1,4 @@
-package sprint01Level02Only;
+package sprint01.InheritanceAndPolymorphism01.level02A;
 
 public abstract class Phone {
     private String brand;

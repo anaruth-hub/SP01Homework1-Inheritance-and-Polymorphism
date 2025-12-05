@@ -1,4 +1,4 @@
-package sprint01Level01B;
+package sprint01.InheritanceAndPolymorphism01.level01B;
 
 public class MainCar {
     public static void main(String[] args){

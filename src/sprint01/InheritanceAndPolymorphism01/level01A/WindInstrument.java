@@ -1,4 +1,4 @@
-package sprint01Level01A;
+package sprint01.InheritanceAndPolymorphism01.level01A;
 
 public class WindInstrument extends Instrument {
     static {

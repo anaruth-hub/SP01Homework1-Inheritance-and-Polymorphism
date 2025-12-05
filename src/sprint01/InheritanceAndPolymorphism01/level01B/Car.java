@@ -1,4 +1,4 @@
-package sprint01Level01B;
+package sprint01.InheritanceAndPolymorphism01.level01B;
 
 public class Car {
     private static  final String brand = "Ponny";
