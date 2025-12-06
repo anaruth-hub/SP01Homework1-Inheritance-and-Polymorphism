@@ -107,20 +107,20 @@ public final class Entrance {
 
     }
 
-    public static boolean readYesNot(String message) {
+    public static boolean readYesNo(String message) {
         while (true) {
-            System.out.println(message + "y/n): ");
-            String entrance = scanner.nextLine().trim().toLowerCase();
+            System.out.print(message + " (y/n): ");
+            String input = scanner.nextLine().trim().toLowerCase();
 
             try {
-                return validateYesNot(entrance);
+                return validateYesNo(input);
             } catch (EntranceException e) {
                 System.out.println(e.getMessage());
             }
         }
     }
 
-    private static boolean validateYesNot(String entrance) throws EntranceException {
+    private static boolean validateYesNo(String entrance) throws EntranceException {
         if (entrance.equals("y")) return true;
         if (entrance.equals("n")) return false;
         throw new EntranceException("The answer is invalid, please enter 'y' or 'n'. ");
