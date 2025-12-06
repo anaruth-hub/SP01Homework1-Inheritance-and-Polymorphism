@@ -9,7 +9,7 @@ public class MainExceptions01 {
         Sale saleWithProducts = createModelSale();
         calculateAndPrint(saleWithProducts, "Sale with products");
 
-        attempIndexOutOfBounds();
+        attemptIndexOutOfBounds();
 
         System.out.println("The program has finished successfully");
     }
@@ -32,7 +32,7 @@ public class MainExceptions01 {
         }
     }
 
-    private static void attempIndexOutOfBounds() {
+    private static void attemptIndexOutOfBounds() {
         try {
             int[] numbers = {10, 20, 30};
             int value = numbers[5];
