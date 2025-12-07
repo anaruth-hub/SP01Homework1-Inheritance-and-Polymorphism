@@ -1,133 +1,151 @@
+# 🎓 Sprint I – Programación en Java
 
-📝 Sprint I – Programación en Java
+Este repositorio contiene las actividades del Sprint I de Java, organizadas por temas y niveles de dificultad.  
+Cada apartado incluye ejercicios para practicar:
 
-Este repositorio contiene las actividades del Sprint I de Java, organizadas por temas y niveles de dificultad.
-Cada apartado recoge diferentes ejercicios que trabajan fundamentos de Programación Orientada a Objetos (POO), herencia, polimorfismo, manejo de excepciones y entrada segura por teclado.
+- Programación Orientada a Objetos (POO)
+- Herencia y polimorfismo
+- Interfaces
+- Métodos estáticos y no estáticos
+- Manejo de excepciones
+- Entrada segura por teclado
 
-📂 Estructura del Proyecto
+---
 
-Los ejercicios están organizados dentro del paquete principal src/sprint01:
+## 📁 Estructura del Proyecto
 
+Los ejercicios están organizados dentro del paquete principal:
+
+
+
+```
 sprint01
+│
 ├── InheritanceAndPolymorphism01
-│      ├── level01A   → Clases abstractas y jerarquías (Instrumentos)
-│      ├── level01B   → Métodos estáticos vs no estáticos (Car)
-│      └── level02A   → Herencia entre clases (Phone / Smartphone)
+│   ├── level01A → Clases abstractas y jerarquías (Instrumentos)
+│   ├── level01B → Métodos estáticos vs no estáticos (Car)
+│   └── level02A → Herencia entre clases (Phone / Smartphone)
 │
 └── Exceptions01
-├── level01A   → Excepción personalizada (EmptySaleException)
-└── level02A   → Lectura segura desde teclado (Entrance)
+    ├── level01A → Excepción personalizada (EmptySaleException)
+    └── level02A → Lectura segura desde teclado (Entrance)
+```
 
 
-Cada nivel contiene varios ejercicios completos, con sus clases y un archivo Main para ejecutar la práctica.
 
-🧩 Descripción de los Ejercicios
-🔶 1. Inheritance & Polymorphism (Herencia y Polimorfismo)
-🔹 Level 01A – Musical Instruments
+---
 
-Objetivo: practicar clases abstractas, herencia y jerarquías.
+## 🟣 Clases principales  
+## 🟣 Clases auxiliares  
+## 🟣 Excepciones personalizadas  
+## 🟣 Archivo Main para ejecutar la práctica
+
+---
+
+# 📘 Descripción de los Ejercicios
+
+---
+
+## 1️⃣ Inheritance & Polymorphism (Herencia y Polimorfismo)
+
+### 🔹 Level 01A – Musical Instruments  
+**Objetivo:** practicar clases abstractas, herencia y jerarquías.
+
 Incluye:
+- Clase abstracta `Instrument`
+- Subclases: `WindInstrument`, `PercussionInstrument`, `StringInstrument`
+- Método abstracto `play()`
+- Demostración de bloques estáticos
 
-Clase abstracta Instrument
+---
 
-Subclases: WindInstrument, PercussionInstrument, StringInstrument
+### 🔹 Level 01B – Car Class (Static / Non-static methods)
 
-Método abstracto play()
+**Objetivo:** comprender la diferencia entre métodos estáticos y de instancia.
 
-Demostración de bloques estáticos de inicialización (carga de clases solo 1 vez)
-
-🔹 Level 01B – Car Class (Static / Non-static methods)
-
-Objetivo: comprender la diferencia entre métodos estáticos y de instancia.
 Incluye:
+- Campos estáticos vs instanciados
+- Métodos estáticos de utilidad
+- Métodos que operan sobre el estado del objeto
 
-Campos estáticos vs instanciados
+---
 
-Métodos estáticos para utilidades
+### 🔹 Level 02A – Phone / Smartphone
 
-Métodos de instancia que trabajan sobre el estado del objeto
+**Objetivo:** profundizar en herencia e interfaces.
 
-🔹 Level 02A – Phone / Smartphone
-
-Objetivo: profundizar en herencia y uso de interfaces.
 Incluye:
+- Clase base: `Phone`
+- Subclase: `Smartphone`
+- Interfaces adicionales según enunciado
+- Uso de @Override
 
-Clase base Phone
+---
 
-Subclase Smartphone
+# 2️⃣ Exceptions – Manejo y Creación de Excepciones
 
-Interfaces adicionales según el enunciado (p. ej. Camera, GPS, etc.)
+### 🔹 Level 01A – EmptySaleException
 
-Sobrescritura de métodos (@Override)
+**Objetivo:** crear una excepción personalizada.
 
-🔶 2. Exceptions (Gestión de excepciones)
-🔹 Level 01A – EmptySaleException
-
-Objetivo: crear una excepción personalizada y gestionar errores típicos.
 Incluye:
+- Clase `Product`
+- Clase `Sale` con lista de productos
+- Excepción `EmptySaleException`
+- Manejo de `IndexOutOfBoundsException`
 
-Clase Product
+---
 
-Clase Sale con lista de productos y cálculo del total
+### 🔹 Level 02A – Console Input Reader (Entrada segura por teclado)
 
-Excepción personalizada EmptySaleException
+**Objetivo:** crear una clase utilitaria para lectura validada desde teclado.
 
-Manejo de IndexOutOfBoundsException
-
-🔹 Level 02A – Console Input Reader (Entrada segura por teclado)
-
-Objetivo: crear una clase utilitaria para lectura validada desde teclado.
 Incluye:
+- Clase estática `Entrance`
+- Un único objeto `Scanner`
+- Métodos validados:
 
-Clase estática Entrance
+Con InputMismatchException:
+- `readByte(String message)`
+- `readInt(String message)`
+- `readFloat(String message)`
+- `readDouble(String message)`
 
-Un único Scanner compartido
+Con Excepción personalizada `EntranceException`:
+- `readChar(String message)`
+- `readString(String message)`
+- `readYesNo(String message)`
 
-Métodos para:
+Características:
+- Bucle de reintentos hasta entrada válida
+- Mensajes personalizados
+- Código limpio y reutilizable
 
-readByte
+---
 
-readInt
+## 🛠️ Tecnologías Utilizadas
 
-readFloat
+- Java JDK 21
+- IntelliJ IDEA Community Edition
+- Git & GitHub
+- Consola / Terminal
 
-readDouble
-(gestionando InputMismatchException)
+---
 
-Métodos con excepción personalizada EntranceException:
+## ▶️ Cómo Ejecutar los Ejercicios
 
-readChar (solo acepta un carácter)
-
-readString (no permite vacío)
-
-readYesNo (respuesta válida y/n o s/n)
-
-Bucle de reintentos hasta que la entrada sea válida
-
-🛠️ Tecnologías Utilizadas
-
-Java (JDK 21)
-
-IntelliJ IDEA Community Edition
-
-Git y GitHub para control de versiones
-
-Entorno de ejecución mediante consola o IDE
-
-▶️ Cómo Ejecutar los Ejercicios
-
-Clonar el repositorio:
-
-git clone https://github.com/anaruth-hub/Sprint-I.git
+1. Clonar el repositorio:  
+   ```bash
+   git clone https://github.com/anaruth-hub/Sprint-I.git
 
 
-Abrir el proyecto en IntelliJ IDEA
+Abre el proyecto en IntelliJ IDEA
+Navega al ejercicio deseado dentro de:
+src/sprint01/...
+Ejecuta el archivo Main...
 
-Navegar al ejercicio deseado dentro de src/sprint01/...
 
-Ejecutar el archivo Main correspondiente desde IntelliJ
-
-🤝 Contribuciones
+## 🤝 Contribuciones
 
 Este repositorio forma parte del material de aprendizaje del Sprint I.
 Se aceptan sugerencias, mejoras o correcciones.
