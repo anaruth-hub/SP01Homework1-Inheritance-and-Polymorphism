@@ -5,71 +5,71 @@ import java.util.Scanner;
 
 public final class Entrance {
 
-    private static final Scanner scanner = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
 
     private Entrance() {
-        throw new AssertionError("The Input class should not be instantiated. ");
+        throw new AssertionError("The Entrance class should not be instantiated. ");
     }
 
      public static byte readByte(String message) {
          while (true) {
-             System.out.println(message + " ");
+             System.out.print(message + ": ");
              try {
-                 byte value = scanner.nextByte();
-                 scanner.nextLine();
+                 byte value = SCANNER.nextByte();
+                 SCANNER.nextLine();
                          return value;
              } catch (InputMismatchException e) {
                  System.out.println("Format error. You must enter an integer (byte).");
-                 scanner.nextLine();
+                 SCANNER.nextLine();
              }
          }
      }
     public static int readInt(String message) {
         while (true) {
-            System.out.println(message + " ");
+            System.out.print(message + ": ");
             try {
-                int value = scanner.nextInt();
-                scanner.nextLine();
+                int value = SCANNER.nextInt();
+                SCANNER.nextLine();
                 return value;
             } catch (InputMismatchException e) {
                 System.out.println("Formatting error. You must enter an integer (int).");
-                scanner.nextLine();
+                SCANNER.nextLine();
             }
         }
     }
     public static float readFloat(String message) {
         while (true) {
-            System.out.println(message + " ");
+            System.out.print(message + ": ");
             try {
-                float value = scanner.nextFloat();
-                scanner.nextLine();
+                float value = SCANNER.nextFloat();
+                SCANNER.nextLine();
                 return value;
             } catch (InputMismatchException e) {
                 System.out.println("Format error. You must enter a decimal (float) number.");
                 System.out.println("If you used a period, try a comma, or vice versa depending on your regional settings.");
-                scanner.nextLine();
+                SCANNER.nextLine();
             }
         }
     }
 
     public static double readDouble(String message) {
         while (true) {
-            System.out.println(message + " ");
+            System.out.print(message + ": ");
             try {
-                double value = scanner.nextDouble();
-                scanner.nextLine();
+                double value = SCANNER.nextDouble();
+                SCANNER.nextLine();
                 return value;
             } catch (InputMismatchException e) {
                 System.out.println("Format error. You must enter a decimal (double) number.");
-                scanner.nextLine();
+                SCANNER.nextLine();
             }
         }
     }
 
     public static char readChar(String message) {
         while (true) {
-            System.out.println(message + " ");
-            String entrance = scanner.nextLine();
+            System.out.print(message + ": ");
+            String entrance = SCANNER.nextLine();
 
             try {
                 return validateChar(entrance);
@@ -88,8 +88,8 @@ public final class Entrance {
 
     public static String readString(String message) {
         while (true) {
-            System.out.println(message + " ");
-            String entrance = scanner.nextLine();
+            System.out.print(message + ": ");
+            String entrance = SCANNER.nextLine();
 
             try {
                 return validateString(entrance);
@@ -103,14 +103,14 @@ public final class Entrance {
         if (!entrance.isBlank()) {
             return entrance;
         }
-        throw new EntranceException("The chain cannot be empty.");
+        throw new EntranceException("The string cannot be empty.");
 
     }
 
     public static boolean readYesNo(String message) {
         while (true) {
             System.out.print(message + " (y/n): ");
-            String input = scanner.nextLine().trim().toLowerCase();
+            String input = SCANNER.nextLine().trim().toLowerCase();
 
             try {
                 return validateYesNo(input);
