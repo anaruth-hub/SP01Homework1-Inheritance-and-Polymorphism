@@ -1,5 +1,8 @@
 package sprint01.Exceptions01.level01A;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainExceptions01 {
     public static void main(String[] args) {
 
@@ -34,12 +37,11 @@ public class MainExceptions01 {
 
     private static void attemptIndexOutOfBounds() {
         try {
-            int[] numbers = {10, 20, 30};
-            int value = numbers[5];
-            System.out.println("The value is in the position 5 " + value);
+            List<String> words = new ArrayList<>();
+            words.add("hello");
+            System.out.println(words.get(5));
         } catch (IndexOutOfBoundsException e) {
-            System.out.println("Index error: You have attempted to access an invalid position");
-            System.out.println("Technical details: " + e.getMessage());
+                        System.out.println("IndexOutOfBoundsException captured: " + e.getMessage());
         }
     }
 }

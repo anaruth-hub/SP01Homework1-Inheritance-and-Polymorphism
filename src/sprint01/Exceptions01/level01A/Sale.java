@@ -6,7 +6,6 @@ import java.util.List;
 
 public class Sale {
     private final List<Product> products = new ArrayList<>();
-
     private double total;
 
     public void addProduct(Product product) {
@@ -29,12 +28,9 @@ public class Sale {
             throw new EmptySaleException();
         }
 
-        double plus = 0.0;
 
-        for (Product product : products) {
-            plus += product.getPrice();
-        }
-
-        this.total = plus;
+        this.total = products.stream()
+                .mapToDouble(Product::getPrice)
+                .sum();
     }
 }
