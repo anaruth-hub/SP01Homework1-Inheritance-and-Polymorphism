@@ -121,6 +121,69 @@ Características:
 - Mensajes personalizados
 - Código limpio y reutilizable
 
+## 🟩 3. Java Collections (Colecciones)
+
+En esta sección se practican las colecciones más usadas de la librería `java.util`, como:
+- `ArrayList`
+- `LinkedHashSet`
+- `HashMap`
+- `ListIterator`
+
+Cada ejercicio desarrolla un aspecto clave de las colecciones: duplicados, orden, iteración segura, uso de mapas, y lectura/escritura de archivos.
+
+---
+
+### 🔹 Level 01A — Ejercicio 1: Duplicados (ArrayList & LinkedHashSet)
+
+**Objetivos:**
+- Crear una lista (`ArrayList`) con los meses del año dejando fuera “August”.
+- Insertar “August” en su posición correcta.
+- Comprobar el comportamiento de los duplicados.
+- Convertir la lista en un `LinkedHashSet` para eliminar duplicados.
+- Recorrer la colección con:
+  - `for-each`
+  - `Iterator`
+
+**Clases creadas:**
+- `Month.java`
+- `MonthsMain.java`
+
+**Estado del ejercicio:** ✔️ *Completado*
+
+---
+
+### 🔹 Level 01B — Ejercicio 2: Iteradores y Modificación Segura
+
+**Objetivos:**
+- Practicar el uso de `ListIterator`.
+- Modificar elementos mientras se recorren sin generar errores.
+- Evitar `ConcurrentModificationException`.
+
+**Estado del ejercicio:** ⬜ *Pendiente*
+
+---
+
+### 🔹 Level 02A — Ejercicio 3: HashMap y Contadores
+
+**Objetivos:**
+- Usar `HashMap<String, Integer>` para contar elementos.
+- Recorrer claves y valores.
+- Ordenar e imprimir resultados.
+
+**Estado del ejercicio:** ⬜ *Pendiente*
+
+---
+
+### 🔹 Level 02B — Ejercicio 4: Lectura y Escritura de Archivos
+
+**Objetivos:**
+- Leer archivos con `BufferedReader`.
+- Procesar datos y almacenarlos en una colección.
+- Crear un archivo de salida con los resultados.
+
+**Estado del ejercicio:** ⬜ *Pendiente*
+
+
 ---
 
 ## 🛠️ Tecnologías Utilizadas
