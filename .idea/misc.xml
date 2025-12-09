@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/src/sprint01/Testing04/aJUnitlevel01A/library-testing04/library-testing04/pom.xml" />
+        <option value="$PROJECT_DIR$/src/sprint01/Testing04/aJUnitlevel01B/parametetized-dni-test/pom.xml" />
+        <option value="$PROJECT_DIR$/src/sprint01/Testing04/aJUnitlevel01B/parametrized-dni-test/pom.xml" />
       </list>
     </option>
   </component>

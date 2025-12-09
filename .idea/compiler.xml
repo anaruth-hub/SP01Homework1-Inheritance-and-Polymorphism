@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="library-testing04" />
+        <module name="parametrized-dni-test" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="parameteretized-dni-test" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
